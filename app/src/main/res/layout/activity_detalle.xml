@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Detalle">
+
+  <TextView
+      android:id="@+id/tvCabecera"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="72dp"
+      android:text="Tu pokemon es: "
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="141dp" />
+
+  <ImageView
+      android:id="@+id/imagen"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="130dp"
+      tools:layout_editor_absoluteY="133dp" />
+
+  <TextView
+      android:id="@+id/tvNombrePokemon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="72dp"
+      android:text="TextView"
+      app:layout_constraintTop_toBottomOf="@+id/imagen"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="176dp" />
+
+  <TextView
+      android:id="@+id/tvTipoPokemon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="116dp"
+      android:text="TextView"
+      app:layout_constraintTop_toBottomOf="@+id/tvNombrePokemon"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="176dp" />
+
+  <Button
+      android:id="@+id/btnUbicacion"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="84dp"
+      android:text="Ver ubicación"
+      app:layout_constraintTop_toBottomOf="@+id/tvTipoPokemon"
+      tools:ignore="MissingConstraints"
+      tools:layout_editor_absoluteX="130dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
